@@ -1,12 +1,14 @@
 # Retail Sales Performance Analysis
 
 ## Project Overview
-This project analyzes retail sales performance using PostgreSQL and Power BI. The goal is to identify key business patterns across revenue, profit, product categories, regional performance, discount strategy, and seasonal sales trends, and to translate the findings into actionable business insights.
+This project analyzes retail sales performance using PostgreSQL and Power BI. The goal is to identify key business patterns across revenue, profit, product categories, regions, discount strategy, and seasonal sales trends, and to translate the findings into actionable business insights.
+
+The analysis was conducted on 9,994 retail transactions from the Superstore Sales dataset. PostgreSQL was used for structured querying and reusable analytical views, while Power BI was used to develop an interactive executive dashboard.
 
 ## Dataset
-- Dataset: Superstore Sales Dataset
-- Rows: 9,994
-- Columns: 21
+- **Dataset:** Superstore Sales Dataset
+- **Rows:** 9,994
+- **Columns:** 21
 
 ## Tools Used
 - PostgreSQL
@@ -29,8 +31,8 @@ This project answers the following questions:
 - Which products or categories show low or negative profitability?
 
 ## Key Findings
-- Total Revenue: **$2.30M**
-- Total Profit: **$286.4K**
+- **Total Revenue:** $2.30M
+- **Total Profit:** $286.4K
 - The **West** region generated the highest sales and profit
 - **Technology** was the strongest-performing category by both revenue and profit
 - **Furniture** generated high sales but relatively weak profit
@@ -50,8 +52,12 @@ The following analytical views were created for reporting and dashboard integrat
 - `v_discount_analysis`
 - `v_product_profitability`
 
-## Dashboard
-The SQL analysis was translated into an interactive Power BI dashboard that includes:
+## Dashboard Preview
+
+![Retail Sales Performance Dashboard](images/dashboard_sales_performance.png)
+
+## Dashboard Features
+The Power BI dashboard includes:
 
 - Total Revenue and Total Profit KPI cards
 - Sales by Region
@@ -62,6 +68,7 @@ The SQL analysis was translated into an interactive Power BI dashboard that incl
 - Monthly Sales Trend
 - Profitability by Sub-Category
 - Top 10 Loss-Making Products
+- Interactive slicers for Month, Region, and Category
 
 ## Business Recommendations
 Based on the analysis, the business should:
@@ -73,15 +80,13 @@ Based on the analysis, the business should:
 - closely review loss-making products and underperforming sub-categories
 - plan inventory and campaigns proactively around Q4 demand spikes
 
-## Files Included
-- Cleaned sales dataset
-- SQL scripts
-- SQL views
-- Power BI dashboard file
-- Dashboard image
-- Project documentation PDF
-- SQL output screenshots
+## Project Structure
+- `data/` → cleaned dataset
+- `sql/` → SQL scripts and analytical views
+- `dashboard/` → Power BI dashboard file
+- `docs/` → exported project documentation
+- `images/` → SQL output screenshots and dashboard image
 
 ## Author
 **Pius Denilson Goodluck**  
-Data Analyst focused on SQL, Power BI, Excel, and business intelligence.
+Aspiring Data Analyst focused on SQL, Power BI, Excel, and business intelligence.
